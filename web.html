@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Bisnis Jualan</title>
+  <link rel="stylesheet" type="text/css" href="chatGP.css">
+</head>
+<body>
+  <header>
+    <h1>Selamat Datang di Website Bisnis Jualan</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Produk</a></li>
+      <li><a href="#">Tentang Kami</a></li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </nav>
+  <section id="produk-section">
+    <h2>Produk Kami</h2>
+    <div id="produk-container">
+      <div class="produk-card">
+        <img src="produk1.jpg" alt="Produk 1">
+        <h3>Produk 1</h3>
+        <p>Harga: $10</p>
+        <button onclick="tambahKeKeranjang(1)">Tambah ke Keranjang</button>
+      </div>
+      <div class="produk-card">
+        <img src="produk2.jpg" alt="Produk 2">
+        <h3>Produk 2</h3>
+        <p>Harga: $15</p>
+        <button onclick="tambahKeKeranjang(2)">Tambah ke Keranjang</button>
+      </div>
+    </div>
+  </section>
+  <section id="keranjang-section">
+    <h2>Keranjang Belanja</h2>
+    <div id="keranjang-container">
+      <ul id="keranjang-list">
+        <li>Belum ada produk yang ditambahkan ke keranjang.</li>
+      </ul>
+      <p>Total: $<span id="total-harga">0</span></p>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+  </section>
+  <footer>
+    <p>Hak Cipta &copy; 2023 Website Bisnis Jualan</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
